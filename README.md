@@ -71,6 +71,6 @@ Maven:
 <dependency>
     <groupId>dev.inmo</groupId>
     <artifactId>plagubot.plugins.commands</artifactId>
-    <version>${$commands_version}</version>
+    <version>${commands_version}</version>
 </dependency>
 ```
