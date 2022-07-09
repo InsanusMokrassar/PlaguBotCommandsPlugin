@@ -22,3 +22,4 @@ jb-dokka-plugin = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.
 
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+jetbrains-dokka = { id = "org.jetbrains.dokka", version.ref = "jb-dokka" }
