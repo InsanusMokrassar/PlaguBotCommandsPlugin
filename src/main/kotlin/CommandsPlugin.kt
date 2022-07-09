@@ -34,7 +34,7 @@ class CommandsPlugin : Plugin {
         runCatchingSafely {
             commands ?.let {
                 setMyCommands(
-                    commands,
+                    commands.distinctBy { it.command },
                     key.scope,
                     key.languageCode
                 )
@@ -58,7 +58,7 @@ class CommandsPlugin : Plugin {
      * take all the available keys in the [CommandsKeeper] and set commands for each key
      */
     override suspend fun BehaviourContext.setupBotPlugin(koin: Koin) {
-        val commandsKeeper = koin.get<CommandsKeeper>()
+        val commandsKeeper = koin.commandsKeeper
 
         log.d { "Subscribe to scopes changed flow" }
         commandsKeeper.onScopeChanged.subscribeSafelyWithoutExceptions(scope) {
