@@ -4,6 +4,7 @@ kotlin = "1.6.21"
 plagubot = "1.2.3"
 kslog = "0.3.2"
 gh-release = "2.4.1"
+jb-dokka = "1.6.21"
 
 [libraries]
 
@@ -15,6 +16,7 @@ kslog = { module = "dev.inmo:kslog", version.ref = "kslog" }
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 kotlin-serialization-plugin = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
 gh-release-plugin = { module = "com.github.breadmoirai:github-release", version.ref = "gh-release" }
+jb-dokka-plugin = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "jb-dokka" }
 
 [plugins]
 
