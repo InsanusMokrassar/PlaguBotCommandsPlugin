@@ -6,6 +6,7 @@ buildscript {
     dependencies {
         classpath libs.kotlin.gradle.plugin
         classpath libs.kotlin.serialization.plugin
+        classpath libs.gh.release.plugin
     }
 }
 
@@ -16,6 +17,9 @@ plugins {
 
 project.group = project_group
 project.version = project_version
+
+apply from: "./publish.gradle"
+apply from: "./github_release.gradle"
 
 repositories {
     mavenCentral()

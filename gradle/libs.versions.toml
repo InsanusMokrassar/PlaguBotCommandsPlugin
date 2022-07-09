@@ -13,6 +13,7 @@ kslog = { module = "dev.inmo:kslog", version.ref = "kslog" }
 # Libs for classpath
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 kotlin-serialization-plugin = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
+gh-release-plugin = { module = "com.github.breadmoirai:github-release", version.ref = "gh-release" }
 
 [plugins]
 
