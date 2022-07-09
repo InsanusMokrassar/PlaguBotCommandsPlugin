@@ -1,0 +1,20 @@
+[versions]
+
+kotlin = "1.6.21"
+plagubot = "1.2.2"
+kslog = "0.3.2"
+
+[libraries]
+
+kotlin = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+plagubot-plugin = { module = "dev.inmo:plagubot.plugin", version.ref = "plagubot" }
+kslog = { module = "dev.inmo:kslog", version.ref = "kslog" }
+
+# Libs for classpath
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-serialization-plugin = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
+
+[plugins]
+
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
