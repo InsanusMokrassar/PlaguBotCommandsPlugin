@@ -7,12 +7,14 @@ buildscript {
         classpath libs.kotlin.gradle.plugin
         classpath libs.kotlin.serialization.plugin
         classpath libs.gh.release.plugin
+        classpath libs.jb.dokka.plugin
     }
 }
 
 plugins {
     alias libs.plugins.kotlin.jvm
     alias libs.plugins.kotlin.serialization
+    id "org.jetbrains.dokka"
 }
 
 project.group = project_group
@@ -30,4 +32,18 @@ dependencies {
     implementation libs.kotlin
     api libs.plagubot.plugin
     api libs.kslog
+}
+
+tasks.dokkaHtml {
+    dokkaSourceSets {
+        configureEach {
+            skipDeprecated.set(true)
+
+            sourceLink {
+                localDirectory.set(file("./"))
+                remoteUrl.set(new URL("https://github.com/InsanusMokrassar/PlaguBotCommandsPlugin/blob/master/"))
+                remoteLineSuffix.set("#L")
+            }
+        }
+    }
 }
