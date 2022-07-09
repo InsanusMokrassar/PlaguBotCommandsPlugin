@@ -2,7 +2,8 @@
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/dev.inmo/plagubot.plugins.commands/badge.svg)](https://maven-badges.herokuapp.com/maven-central/dev.inmo/plagubot.plugins.commands)
 
-This plugin has been created for centralized work with commands in your plugins.
+This plugin has been created for centralized work with commands in your plugins. You may pass your commands (even in
+runtime) and they will automatically appear in bot commands for users
 
 ## How to use
 

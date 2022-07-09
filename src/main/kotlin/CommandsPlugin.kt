@@ -7,6 +7,7 @@ import dev.inmo.plagubot.Plugin
 import dev.inmo.tgbotapi.extensions.api.bot.*
 import dev.inmo.tgbotapi.extensions.behaviour_builder.BehaviourContext
 import dev.inmo.tgbotapi.types.BotCommand
+import dev.inmo.tgbotapi.types.botCommandsLimit
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonObject
 import org.jetbrains.exposed.sql.Database
@@ -34,7 +35,7 @@ class CommandsPlugin : Plugin {
         runCatchingSafely {
             commands ?.let {
                 setMyCommands(
-                    commands.distinctBy { it.command },
+                    commands.distinctBy { it.command }.take(botCommandsLimit.last + 1),
                     key.scope,
                     key.languageCode
                 )
