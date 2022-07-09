@@ -7,6 +7,7 @@ import dev.inmo.plagubot.Plugin
 import dev.inmo.tgbotapi.extensions.api.bot.*
 import dev.inmo.tgbotapi.extensions.behaviour_builder.BehaviourContext
 import dev.inmo.tgbotapi.types.BotCommand
+import dev.inmo.tgbotapi.types.botCommandsLimit
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonObject
 import org.jetbrains.exposed.sql.Database
@@ -19,7 +20,7 @@ import org.koin.core.module.Module
  * flexible setup of commands in runtime.
  */
 @Serializable
-class CommandsPlugin : Plugin {
+object CommandsPlugin : Plugin {
     private val log = KSLog(logTag)
 
     /**
@@ -34,7 +35,7 @@ class CommandsPlugin : Plugin {
         runCatchingSafely {
             commands ?.let {
                 setMyCommands(
-                    commands,
+                    commands.distinctBy { it.command }.take(botCommandsLimit.last + 1),
                     key.scope,
                     key.languageCode
                 )
@@ -58,7 +59,7 @@ class CommandsPlugin : Plugin {
      * take all the available keys in the [CommandsKeeper] and set commands for each key
      */
     override suspend fun BehaviourContext.setupBotPlugin(koin: Koin) {
-        val commandsKeeper = koin.get<CommandsKeeper>()
+        val commandsKeeper = koin.commandsKeeper
 
         log.d { "Subscribe to scopes changed flow" }
         commandsKeeper.onScopeChanged.subscribeSafelyWithoutExceptions(scope) {
