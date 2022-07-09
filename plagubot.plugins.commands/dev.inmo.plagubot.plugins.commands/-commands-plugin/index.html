@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CommandsPlugin</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>plagubot.plugins.commands</span>
+            </a>
+    </div>
+    <div>
+0.1.0    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="plagubot.plugins.commands::dev.inmo.plagubot.plugins.commands/CommandsPlugin///PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../../index.html">plagubot.plugins.commands</a><span class="delimiter">/</span><a href="../index.html">dev.inmo.plagubot.plugins.commands</a><span class="delimiter">/</span><a href="index.html">CommandsPlugin</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Commands</span><wbr></wbr><span><span>Plugin</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">CommandsPlugin</a> : <span data-unresolved-link="dev.inmo.plagubot/Plugin///PointingToDeclaration/">Plugin</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">This plugin has been created for centralized work with commands in context of <span data-unresolved-link="dev.inmo.plagubot/Plugin///PointingToDeclaration/">Plugin</span>s system of plagubot. Pass <a href="../-bot-command-full-info/index.html">BotCommandFullInfo</a> in your <span data-unresolved-link="dev.inmo.plagubot/Plugin/setupDI/org.koin.core.module.Module#org.jetbrains.exposed.sql.Database#kotlinx.serialization.json.JsonObject/PointingToDeclaration/">Plugin.setupDI</span> section to declare some command. You may use <a href="../-commands-keeper/index.html">CommandsKeeper</a> for flexible setup of commands in runtime.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Sources">Sources</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="781065357%2FFunctions%2F769193423" anchor-label="setupBotPlugin" id="781065357%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="setup-bot-plugin.html"><span>setup</span><wbr></wbr><span>Bot</span><wbr></wbr><span><span>Plugin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="781065357%2FFunctions%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><span data-unresolved-link="dev.inmo.tgbotapi.extensions.behaviour_builder/BehaviourContext///PointingToDeclaration/">BehaviourContext</span><span class="token punctuation">.</span><a href="setup-bot-plugin.html"><span class="token function">setupBotPlugin</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">koin<span class="token operator">: </span><span data-unresolved-link="org.koin.core/Koin///PointingToDeclaration/">Koin</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Uses <a href="../-commands-keeper/index.html">CommandsKeeper</a> from <a href="setup-bot-plugin.html">koin</a>. Subscribe on <span data-unresolved-link="dev.inmo.plagubot.plugins.commands/CommandsKeeper/scopesCommands/#/PointingToDeclaration/">CommandsKeeper.scopesCommands</span> to follow changed in scopes and take all the available keys in the <a href="../-commands-keeper/index.html">CommandsKeeper</a> and set commands for each key</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-797167532%2FFunctions%2F769193423" anchor-label="setupDI" id="-797167532%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="setup-d-i.html"><span>setup</span><wbr></wbr><span><span>DI</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-797167532%2FFunctions%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><span data-unresolved-link="org.koin.core.module/Module///PointingToDeclaration/">Module</span><span class="token punctuation">.</span><a href="setup-d-i.html"><span class="token function">setupDI</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">database<span class="token operator">: </span><span data-unresolved-link="org.jetbrains.exposed.sql/Database///PointingToDeclaration/">Database</span><span class="token punctuation">, </span></span><span class="parameter ">params<span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonObject///PointingToDeclaration/">JsonObject</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Creating <a href="../-commands-keeper/index.html">CommandsKeeper</a> and pass it to the DI. It uses <span data-unresolved-link="org.koin.core.scope/Scope/getAll/#/PointingToDeclaration/">org.koin.core.scope.Scope.getAll</span> to get all the <a href="../-bot-command-full-info/index.html">BotCommandFullInfo</a> instances declared in the DI.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Sources</h2>
+      <div class="table" data-togglable="Sources"><a data-name="974270793%2FSource%2F769193423" anchor-label="https://github.com/InsanusMokrassar/PlaguBotCommandsPlugin/blob/master//src/main/kotlin/CommandsPlugin.kt#L17" id="974270793%2FSource%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="https://github.com/InsanusMokrassar/PlaguBotCommandsPlugin/blob/master//src/main/kotlin/CommandsPlugin.kt#L17">jvm source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="974270793%2FSource%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
