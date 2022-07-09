@@ -3,6 +3,7 @@
 kotlin = "1.6.21"
 plagubot = "1.2.2"
 kslog = "0.3.2"
+gh-release = "2.4.1"
 
 [libraries]
 
