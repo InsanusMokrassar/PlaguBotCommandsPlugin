@@ -20,7 +20,7 @@ import org.koin.core.module.Module
  * flexible setup of commands in runtime.
  */
 @Serializable
-class CommandsPlugin : Plugin {
+object CommandsPlugin : Plugin {
     private val log = KSLog(logTag)
 
     /**
