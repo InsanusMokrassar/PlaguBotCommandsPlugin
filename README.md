@@ -5,6 +5,26 @@
 This plugin has been created for centralized work with commands in your plugins. You may pass your commands (even in
 runtime) and they will automatically appear in bot commands for users
 
+## How to include
+
+Add dependency:
+
+Gradle:
+
+```groovy
+api "dev.inmo:plagubot.plugins.commands:$commands_version"
+```
+
+Maven:
+
+```xml
+<dependency>
+    <groupId>dev.inmo</groupId>
+    <artifactId>plagubot.plugins.commands</artifactId>
+    <version>${commands_version}</version>
+</dependency>
+```
+
 ## How to use
 
 End user should include in his plugins section next line:
@@ -54,23 +74,3 @@ retrieved from `koin` via simple `koin.get<CommandsKeeper>()` or `koin.commandsK
 
 Just as in the code above (in `setupDI`) you may pass all the command environment and it will be automatically updated
 for bot.
-
-## How to include
-
-Add dependency:
-
-Gradle:
-
-```groovy
-api "dev.inmo:plagubot.plugins.commands:$commands_version"
-```
-
-Maven:
-
-```xml
-<dependency>
-    <groupId>dev.inmo</groupId>
-    <artifactId>plagubot.plugins.commands</artifactId>
-    <version>${commands_version}</version>
-</dependency>
-```
