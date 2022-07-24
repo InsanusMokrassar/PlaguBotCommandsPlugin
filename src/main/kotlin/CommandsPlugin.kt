@@ -72,7 +72,7 @@ object CommandsPlugin : Plugin {
         commandsKeeper.getKeys().forEach {
             val commands = commandsKeeper.getCommands(it)
             log.d { "Start setup initially passed commands for key $it: ${commands ?.joinToString { it.command }}" }
-            setScopeCommands(it, commandsKeeper.getCommands(it))
+            setScopeCommands(it, commands)
         }
         log.d { "Complete setup initially passed commands" }
     }
