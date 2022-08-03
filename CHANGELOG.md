@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1
+
+* `Versions`:
+  * `plagubot`: `1.4.1`
+  * `kslog`: `0.4.2`
+
 ## 0.1.3
 
 * Fix of double commands getting on a start of bot
