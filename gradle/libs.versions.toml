@@ -1,10 +1,10 @@
 [versions]
 
-kotlin = "1.6.21"
-plagubot = "1.4.1"
-kslog = "0.4.2"
+kotlin = "1.7.10"
+plagubot = "2.0.0"
+kslog = "0.5.0"
 gh-release = "2.4.1"
-jb-dokka = "1.6.21"
+jb-dokka = "1.7.10"
 
 [libraries]
 
