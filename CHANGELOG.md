@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0
+
+* `Versions`:
+  * `kotlin`: `1.7.10`
+  * `plagubot`: `2.0.0`
+  * `kslog`: `0.5.0`
+
 ## 0.2.1
 
 * `Versions`:
