@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.1
+
+* `Versions`:
+  * `plagubot`: `2.1.0`
+  * `kslog`: `0.5.1`
+
 ## 0.3.0
 
 * `Versions`:
