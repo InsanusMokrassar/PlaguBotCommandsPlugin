@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.3
+
+* `Versions`:
+  * `plagubot`: `2.3.0`
+
 ## 0.3.2
 
 * `Versions`:
