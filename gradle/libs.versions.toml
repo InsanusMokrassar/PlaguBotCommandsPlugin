@@ -1,7 +1,7 @@
 [versions]
 
 kotlin = "1.7.10"
-plagubot = "2.2.0"
+plagubot = "2.3.0"
 kslog = "0.5.1"
 gh-release = "2.4.1"
 jb-dokka = "1.7.10"
