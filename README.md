@@ -1,3 +1,5 @@
+# Replaced to the [PlaguBotPlugins](https://github.com/InsanusMokrassar/PlaguBotPlugins)
+
 # PlaguBotCommandsPlugin
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/dev.inmo/plagubot.plugins.commands/badge.svg)](https://maven-badges.herokuapp.com/maven-central/dev.inmo/plagubot.plugins.commands)
